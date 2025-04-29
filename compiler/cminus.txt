@@ -1,0 +1,32 @@
+/* Factorial calculation in C Minus */
+int main(void)
+{
+  int x;
+  int fact;
+  int temp;
+  
+  /* Get input value */
+  x = input();
+  
+  if (x > 0)
+  {
+    fact = 1;
+    
+    /* Calculate factorial using while loop instead of repeat-until */
+    while (x > 0)
+    {
+      fact = fact * x;
+      x = x - 1;
+    }
+    
+    /* Output the result */
+    output(fact);
+  }
+  else
+  {
+    /* Handle non-positive input */
+    output(0);
+  }
+  
+  return 0;
+}
